@@ -58,10 +58,10 @@ export default function HomePage() {
             {/* Hero Section */}
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-secondary-900 mb-4">
-                Patternist Design System
+                Snack Uikit Design System
               </h1>
               <p className="text-xl text-secondary-600 mb-8 max-w-2xl mx-auto">
-                Комплексная дизайн-система для создания консистентных и доступных пользовательских интерфейсов
+                Библиотека компонентов компании Cloud.ru и сообщества TeamSnack для создания современных веб-приложений
               </p>
               <div className="flex justify-center space-x-4">
                 <Link href="/principles" className="btn-primary">
@@ -105,14 +105,14 @@ export default function HomePage() {
               <h2 className="text-2xl font-bold text-secondary-900 mb-4">Быстрый старт</h2>
               <div className="prose prose-secondary max-w-none">
                 <p className="text-secondary-600 mb-4">
-                  Patternist предоставляет все необходимые инструменты для создания современных веб-приложений:
+                  Snack Uikit предоставляет все необходимые инструменты для создания современных веб-приложений:
                 </p>
                 <ul className="space-y-2 text-secondary-600">
-                  <li>• <strong>Готовая цветовая палитра</strong> с поддержкой темной темы</li>
-                  <li>• <strong>Система типографики</strong> с четкой иерархией</li>
-                  <li>• <strong>Библиотека компонентов</strong> для быстрой разработки</li>
-                  <li>• <strong>UX паттерны</strong> для лучшего пользовательского опыта</li>
-                  <li>• <strong>Руководства по доступности</strong> для инклюзивного дизайна</li>
+                  <li>• <strong>Модульная архитектура</strong> - каждый компонент это отдельный npm-пакет</li>
+                  <li>• <strong>Поддержка тем</strong> - Light и Dark режимы</li>
+                  <li>• <strong>TypeScript</strong> - полная типизация компонентов</li>
+                  <li>• <strong>Автоматизированное тестирование</strong> - Chrome и Firefox</li>
+                  <li>• <strong>Figma интеграция</strong> - готовые токены дизайна</li>
                 </ul>
               </div>
             </div>
@@ -124,15 +124,15 @@ export default function HomePage() {
                 <div className="flex items-center space-x-4 p-4 bg-secondary-50 rounded-lg">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div>
-                    <h4 className="font-medium text-secondary-900">Новые компоненты форм</h4>
-                    <p className="text-sm text-secondary-600">Добавлены улучшенные компоненты для работы с формами</p>
+                    <h4 className="font-medium text-secondary-900">Модульная архитектура</h4>
+                    <p className="text-sm text-secondary-600">Каждый компонент - отдельный npm-пакет с версионностью</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4 p-4 bg-secondary-50 rounded-lg">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <div>
-                    <h4 className="font-medium text-secondary-900">Обновлена цветовая палитра</h4>
-                    <p className="text-sm text-secondary-600">Расширена палитра с новыми семантическими цветами</p>
+                    <h4 className="font-medium text-secondary-900">Поддержка тем</h4>
+                    <p className="text-sm text-secondary-600">Light и Dark режимы с автоматическим переключением</p>
                   </div>
                 </div>
               </div>
