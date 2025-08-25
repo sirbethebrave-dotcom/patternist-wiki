@@ -58,7 +58,7 @@ export default function AdminDashboardPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div>
-              <h1 className="text-2xl font-bold text-secondary-900">Snack Uikit Admin</h1>
+              <h1 className="text-2xl font-bold text-secondary-900">Patternist Wiki Admin</h1>
               <p className="text-sm text-secondary-600">Панель управления</p>
             </div>
             <div className="flex items-center space-x-4">

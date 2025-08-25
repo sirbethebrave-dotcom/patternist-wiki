@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Snack Uikit - Дизайн-система Wiki',
-  description: 'Документация и руководство по дизайн-системе Snack Uikit от Cloud.ru и TeamSnack',
-  keywords: ['дизайн-система', 'UI', 'UX', 'компоненты', 'паттерны', 'snack uikit', 'cloud.ru', 'teamsnack'],
+  title: 'Patternist Wiki - Дизайн-система',
+  description: 'Документация и руководство по дизайн-системе Patternist Wiki',
+  keywords: ['дизайн-система', 'UI', 'UX', 'компоненты', 'паттерны', 'patternist', 'wiki'],
 }
 
 export default function RootLayout({

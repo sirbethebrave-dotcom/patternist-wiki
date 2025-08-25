@@ -126,8 +126,8 @@ export default function Sidebar() {
   return (
     <div className="w-64 bg-white border-r border-secondary-200 h-screen overflow-y-auto">
       <div className="p-6 border-b border-secondary-200">
-        <h1 className="text-xl font-bold text-primary-600">Snack Uikit</h1>
-        <p className="text-sm text-secondary-600 mt-1">Cloud.ru & TeamSnack</p>
+        <h1 className="text-xl font-bold text-primary-600">Patternist Wiki</h1>
+        <p className="text-sm text-secondary-600 mt-1">Дизайн-система</p>
       </div>
       
       <nav className="p-4 space-y-1">

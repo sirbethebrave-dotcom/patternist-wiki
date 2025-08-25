@@ -173,7 +173,7 @@ git push origin main
 
 Ваш сайт Patternist Wiki теперь доступен в интернете! 
 
-**Ссылка на ваш сайт:** `https://ваш-проект.vercel.app`
+**Ссылка на ваш сайт:** `https://patternist-wiki.vercel.app`
 
 **Что дальше:**
 - Поделитесь ссылкой с коллегами

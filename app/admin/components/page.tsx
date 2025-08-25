@@ -104,7 +104,7 @@ export default function AdminComponentsPage() {
           <div className="flex justify-between items-center py-4">
             <div>
               <h1 className="text-2xl font-bold text-secondary-900">Управление компонентами</h1>
-              <p className="text-sm text-secondary-600">Библиотека компонентов Snack Uikit</p>
+              <p className="text-sm text-secondary-600">Библиотека компонентов Patternist Wiki</p>
             </div>
             <div className="flex items-center space-x-4">
               <Link href="/admin/dashboard" className="text-secondary-600 hover:text-secondary-900">

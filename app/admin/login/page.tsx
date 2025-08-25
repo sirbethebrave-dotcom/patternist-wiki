@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
           {/* Заголовок */}
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-secondary-900 mb-2">
-              Snack Uikit Admin
+              Patternist Wiki Admin
             </h1>
             <p className="text-secondary-600">
               Панель администратора

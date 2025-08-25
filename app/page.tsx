@@ -58,10 +58,10 @@ export default function HomePage() {
             {/* Hero Section */}
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-secondary-900 mb-4">
-                Snack Uikit Design System
+                Patternist Wiki Design System
               </h1>
               <p className="text-xl text-secondary-600 mb-8 max-w-2xl mx-auto">
-                Библиотека компонентов компании Cloud.ru и сообщества TeamSnack для создания современных веб-приложений
+                Комплексная дизайн-система для создания консистентных и доступных пользовательских интерфейсов
               </p>
               <div className="flex justify-center space-x-4">
                 <Link href="/principles" className="btn-primary">
@@ -105,7 +105,7 @@ export default function HomePage() {
               <h2 className="text-2xl font-bold text-secondary-900 mb-4">Быстрый старт</h2>
               <div className="prose prose-secondary max-w-none">
                 <p className="text-secondary-600 mb-4">
-                  Snack Uikit предоставляет все необходимые инструменты для создания современных веб-приложений:
+                  Patternist Wiki предоставляет все необходимые инструменты для создания современных веб-приложений:
                 </p>
                 <ul className="space-y-2 text-secondary-600">
                   <li>• <strong>Модульная архитектура</strong> - каждый компонент это отдельный npm-пакет</li>
