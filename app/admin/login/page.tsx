@@ -32,30 +32,59 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center p-4">
-      <div className="max-w-md w-full">
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+    <div style={{ 
+      minHeight: '100vh', 
+      background: 'linear-gradient(135deg, #eff6ff 0%, #f1f5f9 100%)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '1rem'
+    }}>
+      <div style={{ maxWidth: '28rem', width: '100%' }}>
+        <div style={{
+          backgroundColor: 'white',
+          borderRadius: '1rem',
+          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+          padding: '2rem'
+        }}>
           {/* Заголовок */}
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-secondary-900 mb-2">
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <h1 style={{ 
+              fontSize: '1.875rem', 
+              fontWeight: 'bold', 
+              color: '#1e293b', 
+              marginBottom: '0.5rem' 
+            }}>
               Patternist Wiki Admin
             </h1>
-            <p className="text-secondary-600">
+            <p style={{ color: '#64748b' }}>
               Панель администратора
             </p>
           </div>
 
           {/* Форма входа */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {error && (
-              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+              <div style={{
+                backgroundColor: '#fef2f2',
+                border: '1px solid #fecaca',
+                color: '#dc2626',
+                padding: '0.75rem 1rem',
+                borderRadius: '0.5rem'
+              }}>
                 {error}
               </div>
             )}
 
             {/* Поле пользователя */}
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-secondary-700 mb-2">
+              <label htmlFor="username" style={{ 
+                display: 'block', 
+                fontSize: '0.875rem', 
+                fontWeight: '500', 
+                color: '#475569', 
+                marginBottom: '0.5rem' 
+              }}>
                 Имя пользователя
               </label>
               <input
@@ -63,7 +92,13 @@ export default function AdminLoginPage() {
                 type="text"
                 value={credentials.username}
                 onChange={(e) => setCredentials({ ...credentials, username: e.target.value })}
-                className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                style={{
+                  width: '100%',
+                  padding: '0.75rem 1rem',
+                  border: '1px solid #cbd5e1',
+                  borderRadius: '0.5rem',
+                  fontSize: '1rem'
+                }}
                 placeholder="Введите имя пользователя"
                 required
               />
@@ -71,29 +106,47 @@ export default function AdminLoginPage() {
 
             {/* Поле пароля */}
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-secondary-700 mb-2">
+              <label htmlFor="password" style={{ 
+                display: 'block', 
+                fontSize: '0.875rem', 
+                fontWeight: '500', 
+                color: '#475569', 
+                marginBottom: '0.5rem' 
+              }}>
                 Пароль
               </label>
-              <div className="relative">
+              <div style={{ position: 'relative' }}>
                 <input
                   id="password"
                   type={showPassword ? 'text' : 'password'}
                   value={credentials.password}
                   onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
-                  className="w-full px-4 py-3 pr-12 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem 1rem',
+                    paddingRight: '3rem',
+                    border: '1px solid #cbd5e1',
+                    borderRadius: '0.5rem',
+                    fontSize: '1rem'
+                  }}
                   placeholder="Введите пароль"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-secondary-400 hover:text-secondary-600"
+                  style={{
+                    position: 'absolute',
+                    right: '0.75rem',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: '#94a3b8',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer'
+                  }}
                 >
-                  {showPassword ? (
-                    <EyeSlashIcon className="w-5 h-5" />
-                  ) : (
-                    <EyeIcon className="w-5 h-5" />
-                  )}
+                  {showPassword ? '👁️' : '👁️‍🗨️'}
                 </button>
               </div>
             </div>
@@ -102,15 +155,31 @@ export default function AdminLoginPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200"
+              style={{
+                width: '100%',
+                backgroundColor: isLoading ? '#93c5fd' : '#2563eb',
+                color: 'white',
+                fontWeight: '500',
+                padding: '0.75rem 1rem',
+                borderRadius: '0.5rem',
+                border: 'none',
+                cursor: isLoading ? 'not-allowed' : 'pointer',
+                fontSize: '1rem'
+              }}
             >
               {isLoading ? 'Вход...' : 'Войти'}
             </button>
           </form>
 
           {/* Подсказка */}
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <p className="text-sm text-blue-700">
+          <div style={{
+            marginTop: '1.5rem',
+            padding: '1rem',
+            backgroundColor: '#dbeafe',
+            border: '1px solid #bfdbfe',
+            borderRadius: '0.5rem'
+          }}>
+            <p style={{ fontSize: '0.875rem', color: '#1d4ed8' }}>
               <strong>Тестовые данные:</strong><br />
               Логин: <code>admin</code><br />
               Пароль: <code>admin123</code>
