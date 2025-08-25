@@ -43,6 +43,12 @@ export default function Header({ onMenuToggle }: HeaderProps) {
           <div className="hidden md:flex items-center space-x-2 text-sm text-secondary-600">
             <span>Версия 1.0.0</span>
           </div>
+          <Link 
+            href="/admin/login" 
+            className="bg-primary-600 hover:bg-primary-700 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            Админка
+          </Link>
         </div>
       </div>
     </header>
